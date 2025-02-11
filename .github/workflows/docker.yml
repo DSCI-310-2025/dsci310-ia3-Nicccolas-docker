@@ -3,18 +3,18 @@
 # Can be triggered by either pushing a commit that changes the `Dockerfile`,
 # or manually dispatching the workflow.
 
-name: Publish Docker image
+name: Publish Docker image # this name will show on the Github UI
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # = manually run
   push:
     paths:
       - 'Dockerfile'
       - 'conda-linux-64.lock'
 
 jobs:
-  push_to_registry:
-    name: Push Docker image to Docker Hub
+  push_to_registry: # computer title for this job
+    name: Push Docker image to Docker Hub # human readable name
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
