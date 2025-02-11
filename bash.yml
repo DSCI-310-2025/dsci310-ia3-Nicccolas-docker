@@ -1,4 +1,4 @@
-name: Publish Docker image # this name will show on the Github UI
+name: Bash YML # this name will show on the Github UI
 
 on:
   workflow_dispatch: # = allows to manually run on github with a button in the actions page
