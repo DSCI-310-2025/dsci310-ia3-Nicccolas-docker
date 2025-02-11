@@ -6,7 +6,7 @@
 name: Publish Docker image # this name will show on the Github UI
 
 on:
-  workflow_dispatch: # = manually run
+  workflow_dispatch: # = allows to manually run on github with a button in the actions page
   push:
     paths:
       - 'Dockerfile'
@@ -14,7 +14,7 @@ on:
 
 jobs:
   push_to_registry: # computer title for this job
-    name: Push Docker image to Docker Hub # human readable name
+    name: Push Docker image to Docker Hub # human readable name in github under Action > Publish Docker image > Jobs
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo

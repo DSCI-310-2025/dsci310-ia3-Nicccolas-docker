@@ -1,0 +1,25 @@
+name: Publish Docker image # this name will show on the Github UI
+
+on:
+  workflow_dispatch: # = allows to manually run on github with a button in the actions page
+  push:
+    branches: [main]
+
+jobs:
+  run_bash_command: # computer title for this job
+    name: Push Docker image to Docker Hub # human readable name in github under Action > Publish Docker image > Jobs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo  # can see these steps on github
+        uses: actions/checkout@v4
+
+      - name: run a ls command manually
+        run: ls -a
+
+      - name: run multiple commands manually
+        run:
+          pwd
+          ls -a
+      
+      - name: run a script
+        run: bash random_script.sh
