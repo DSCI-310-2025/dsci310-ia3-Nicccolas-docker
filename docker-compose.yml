@@ -1,7 +1,7 @@
 services:
   analysis-env:
     #image: rocker/rstudio:4.4.2 
-    image: mycontainer
+    image: nzhu02/mycontainer
     ports:
       - "8787:8787"
     volumes:    # to mount local to remote container

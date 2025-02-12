@@ -1,7 +1,10 @@
 GitHub repository:
 https://github.com/DSCI-310-2025/dsci310-ia3-Nicccolas-docker
 
-Docker Hub link:
+Image for docker-compose.yml:
+image: nzhu02/mycontainer
+
+DockerHub link:
 https://hub.docker.com/r/nzhu02/mycontainer
 
 
